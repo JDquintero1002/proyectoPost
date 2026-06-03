@@ -1,0 +1,15 @@
+<h1>Listar Medico</h1>
+<table>
+    <thead>
+        <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+    </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor="let e of medicos">
+            <td>{{e.id}}</td>
+            <td>{{e.nombre}}</td>
+        </tr>
+    </tbody>
+</table>
