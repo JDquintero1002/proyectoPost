@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 interface Medico{
   id:string
   nombre:string
@@ -9,7 +10,7 @@ interface Medico{
 
 @Component({
   selector: 'app-listar-medico',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './listar-medico.html',
   styleUrl: './listar-medico.css',
 })

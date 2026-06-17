@@ -10,6 +10,7 @@
         <tr *ngFor="let e of medicos">
             <td>{{e.id}}</td>
             <td>{{e.nombre}}</td>
+            <td><button [routerlink]="['/actualizarmedicos',m.id]">Actualizar</button></td>
         </tr>
     </tbody>
 </table>
